@@ -1,0 +1,125 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Azul claro suave para o fundo */
+    color: #333;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+header {
+    background-color: #1565c0;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: #0d47a1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #1976d2;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #0d47a1;
+}
+
+.evento {
+    background-color: white;
+    padding: 15px;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Aumentando o tamanho total do carrossel */
+    margin: 0 auto 20px;
+}
+
+.carrossel-img {
+    width: 200px; /* Ajustando para 200px */
+    height: 200px; /* Ajustando para 200px */
+    margin: 0 10px;
+    object-fit: cover; /* Mantém as imagens proporcionais */
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.carrossel-img.active {
+    opacity: 1;
+}
+
+
+
+/* Formulário de Contato */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0d47a1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #1565c0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .evento, form {
+        width: 90%;
+    }
+}
